@@ -25,10 +25,10 @@ spec:
       - name: ecr-registry-secret
       containers:
       - name: frontend
-        image: public.ecr.aws/k9k9g4r5/three-tier-frontend:latest
+        image: public.ecr.aws/z2d4d8s8/three-tier-fontend:latest
         imagePullPolicy: Always
         env:
           - name: REACT_APP_BACKEND_URL
-            value: "http://api:8080/api/tasks"
+            value: "http://backend.devopspreeti.cloud/api/tasks"
         ports:
         - containerPort: 3000
